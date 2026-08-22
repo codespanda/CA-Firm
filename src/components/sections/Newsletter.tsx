@@ -19,7 +19,7 @@ export function Newsletter() {
   return (
     <section className="bg-background">
       <div className="mx-auto max-w-[1440px] px-4 py-16 sm:px-6 lg:px-10 lg:py-20">
-        <div className="relative mx-auto flex max-w-3xl flex-col items-center overflow-hidden rounded-md bg-gradient-to-br from-navy via-navy to-[#1a2f5c] p-8 text-center text-white shadow-xl sm:p-12">
+        <div className="relative mx-auto flex max-w-5xl flex-col items-center overflow-hidden rounded-md bg-gradient-to-br from-navy via-navy to-[#1a2f5c] p-8 text-center text-white shadow-xl sm:p-12">
           {/* decorative glow */}
           <span className="pointer-events-none absolute -right-10 -top-10 size-40 rounded-full bg-gold/10 blur-2xl" />
           <span className="pointer-events-none absolute -bottom-14 -left-10 size-40 rounded-full bg-gold/10 blur-2xl" />
@@ -45,7 +45,7 @@ export function Newsletter() {
           </ul>
 
           {submitted ? (
-            <div className="relative mt-8 flex max-w-sm items-center gap-3 rounded-sm border border-gold/30 bg-gold/10 p-4">
+            <div className="relative mt-8 flex max-w-md items-center gap-3 rounded-sm border border-gold/30 bg-gold/10 p-4">
               <CheckCircle2 className="size-5 shrink-0 text-gold" />
               <p className="text-sm text-white">
                 You&apos;re subscribed! Watch your inbox for updates.
@@ -53,7 +53,7 @@ export function Newsletter() {
             </div>
           ) : (
             <form
-              className="relative mt-8 flex w-full max-w-sm flex-col gap-3 sm:flex-row"
+              className="relative mt-8 flex w-full max-w-md flex-col gap-3 sm:flex-row"
               onSubmit={handleSubscribe}
             >
               <Input
